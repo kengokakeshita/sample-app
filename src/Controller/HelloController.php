@@ -9,12 +9,12 @@ use Symfony\Component\Routing\Annotation\Route; #アノテーションでルー�
 class HelloController extends AbstractController #AbstractControllerを継承してクラスを定義する
 {
   /**
-   * @Route("/hello/{name}/{pass]", name="hello")
+   * @Route("/hello/{name}/{pass}", name="hello")
    */
 
-  public function index( $name, $pass)
+  public function index($name, $pass)
   {
-    $result = '<html><body>>';
+    $result = '<html><body>';
     $result .= '<h1>Parameter</h1>';
     $result .= '<p>name: ' . $name . '</p>';
     $result .= '<p>pass: ' . $pass . '</p>';
